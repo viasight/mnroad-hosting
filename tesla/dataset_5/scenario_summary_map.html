@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7a6968ce5c176375db854b32d5733571 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+     <div style="
+         position: fixed; 
+         top: 10px; left: 50%; 
+         transform: translateX(-50%);
+         z-index: 9999; 
+         background-color: rgba(255, 255, 255, 0.8); 
+         padding: 8px 16px; 
+         border: 2px solid #444; 
+         border-radius: 8px; 
+         font-size: 16px;
+         font-weight: bold;
+         box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+     ">
+         Vehicle: TESLA, Recorded at: Wednesday, April 16, 2025 6:04:47.299 AM, Time: Session: Regular Lane Keeping<br>
+         <a href="https://docs.google.com/spreadsheets/d/1h2Zd25rLmKF2LTfIW28CaLW8jMZ5KCF8r1c77QJUFdE/edit?usp=sharing" target="_blank" style="font-weight: normal; font-size: 14px; color: #007bff; text-decoration: underline;">
+             View Data Sheets
+         </a>
+     </div>
+    
+            <div class="folium-map" id="map_7a6968ce5c176375db854b32d5733571" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7a6968ce5c176375db854b32d5733571 = L.map(
+                "map_7a6968ce5c176375db854b32d5733571",
+                {
+                    center: [45.262580599999986, -93.7105343153846],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 16,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b63a8783473b06b78a0ef23a86a74f60 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_b63a8783473b06b78a0ef23a86a74f60.addTo(map_7a6968ce5c176375db854b32d5733571);
+        
+    
+            var poly_line_85d8a615dcf16434fd938d5380e78a12 = L.polyline(
+                [[45.2587666, -93.7031859], [45.2594337, -93.7044082]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_7a6968ce5c176375db854b32d5733571);
+        
+    
+            var marker_c267cdd00797129276b9291e1e2fb988 = L.marker(
+                [45.25910015, -93.70379704999999],
+                {
+}
+            ).addTo(map_7a6968ce5c176375db854b32d5733571);
+        
+    
+            var icon_891cb40eb32040312ce7be4e000d633a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c5e4064c80aeb9a92f6e168020da0005 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_98f6c9d8515500b25d07f3b3676dcfc1 = $(`<div id="html_98f6c9d8515500b25d07f3b3676dcfc1" style="width: 100.0%; height: 100.0%;">     <b>Scenario 4</b><br>     Lane Confidence Score: 99.1<br>     Lane Width Score: 94.2<br>     Lane Lookahead Score: 90.315<br>     Lane Visibility Score: 85.011<br>     Safety Score: 96.626<br>     Remarks: <br>     <a href='scenario_videos/scenario_4.mp4' target='_blank'>Watch Video</a>     </div>`)[0];
+                popup_c5e4064c80aeb9a92f6e168020da0005.setContent(html_98f6c9d8515500b25d07f3b3676dcfc1);
+            
+        
+
+        marker_c267cdd00797129276b9291e1e2fb988.bindPopup(popup_c5e4064c80aeb9a92f6e168020da0005)
+        ;
+
+        
+    
+    
+                marker_c267cdd00797129276b9291e1e2fb988.setIcon(icon_891cb40eb32040312ce7be4e000d633a);
+            
+    
+            var poly_line_fdc2456665b9c2c009f38f8f6866a9df = L.polyline(
+                [[45.260552, -93.7064617], [45.2611517, -93.7075602]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_7a6968ce5c176375db854b32d5733571);
+        
+    
+            var marker_759d0cbba7a8d28f556702316ba78cfe = L.marker(
+                [45.260851849999995, -93.70701095000001],
+                {
+}
+            ).addTo(map_7a6968ce5c176375db854b32d5733571);
+        
+    
+            var icon_7ff7543b0a565b0efef39c4aa75754ef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ff529e18621f787fc075d8254a08df35 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4e958e07e63942cbe06cea662415eb30 = $(`<div id="html_4e958e07e63942cbe06cea662415eb30" style="width: 100.0%; height: 100.0%;">     <b>Scenario 2</b><br>     Lane Confidence Score: 99.6<br>     Lane Width Score: 99.5<br>     Lane Lookahead Score: 92.589<br>     Lane Visibility Score: 89.426<br>     Safety Score: 99.542<br>     Remarks: <br>     <a href='scenario_videos/scenario_2.mp4' target='_blank'>Watch Video</a>     </div>`)[0];
+                popup_ff529e18621f787fc075d8254a08df35.setContent(html_4e958e07e63942cbe06cea662415eb30);
+            
+        
+
+        marker_759d0cbba7a8d28f556702316ba78cfe.bindPopup(popup_ff529e18621f787fc075d8254a08df35)
+        ;
+
+        
+    
+    
+                marker_759d0cbba7a8d28f556702316ba78cfe.setIcon(icon_7ff7543b0a565b0efef39c4aa75754ef);
+            
+    
+            var poly_line_77d525f779860498defea5308d129808 = L.polyline(
+                [[45.2622133, -93.7095478], [45.2629315, -93.7108583]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_7a6968ce5c176375db854b32d5733571);
+        
+    
+            var marker_5215aba4d7cacc0c0bea1834a01006b3 = L.marker(
+                [45.262572399999996, -93.71020304999999],
+                {
+}
+            ).addTo(map_7a6968ce5c176375db854b32d5733571);
+        
+    
+            var icon_7c62ac774f8c00c1d0618e7734e209eb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_85786c121760de9083dd4f9bd493b340 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b7f70d58c6bba6a6daf30e1731adf380 = $(`<div id="html_b7f70d58c6bba6a6daf30e1731adf380" style="width: 100.0%; height: 100.0%;">     <b>Scenario 10</b><br>     Lane Confidence Score: 99.9<br>     Lane Width Score: 99.7<br>     Lane Lookahead Score: 93.032<br>     Lane Visibility Score: 89.2<br>     Safety Score: 99.818<br>     Remarks: <br>     <a href='scenario_videos/scenario_10.mp4' target='_blank'>Watch Video</a>     </div>`)[0];
+                popup_85786c121760de9083dd4f9bd493b340.setContent(html_b7f70d58c6bba6a6daf30e1731adf380);
+            
+        
+
+        marker_5215aba4d7cacc0c0bea1834a01006b3.bindPopup(popup_85786c121760de9083dd4f9bd493b340)
+        ;
+
+        
+    
+    
+                marker_5215aba4d7cacc0c0bea1834a01006b3.setIcon(icon_7c62ac774f8c00c1d0618e7734e209eb);
+            
+    
+            var poly_line_0a957b99fe7d5586fb63e36a8a433cd5 = L.polyline(
+                [[45.2632864, -93.7115121], [45.2638815, -93.7126152]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_7a6968ce5c176375db854b32d5733571);
+        
+    
+            var marker_aa6d729ad6a40511a9069a5e4d97ce55 = L.marker(
+                [45.26358395, -93.71206365],
+                {
+}
+            ).addTo(map_7a6968ce5c176375db854b32d5733571);
+        
+    
+            var icon_a635b548865e6a0a450cde20206d8c5b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5125f225f7d0fdd84e64f14587e40b5a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5bc1713ade7fc6fbccbf63f4db2602ea = $(`<div id="html_5bc1713ade7fc6fbccbf63f4db2602ea" style="width: 100.0%; height: 100.0%;">     <b>Scenario 9</b><br>     Lane Confidence Score: 99.8<br>     Lane Width Score: 94.5<br>     Lane Lookahead Score: 91.14<br>     Lane Visibility Score: 85.508<br>     Safety Score: 97.157<br>     Remarks: <br>     <a href='scenario_videos/scenario_9.mp4' target='_blank'>Watch Video</a>     </div>`)[0];
+                popup_5125f225f7d0fdd84e64f14587e40b5a.setContent(html_5bc1713ade7fc6fbccbf63f4db2602ea);
+            
+        
+
+        marker_aa6d729ad6a40511a9069a5e4d97ce55.bindPopup(popup_5125f225f7d0fdd84e64f14587e40b5a)
+        ;
+
+        
+    
+    
+                marker_aa6d729ad6a40511a9069a5e4d97ce55.setIcon(icon_a635b548865e6a0a450cde20206d8c5b);
+            
+    
+            var poly_line_8608426051a58a0043a3161428948796 = L.polyline(
+                [[45.2642376, -93.7132765], [45.2649596, -93.7146001]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_7a6968ce5c176375db854b32d5733571);
+        
+    
+            var marker_341f077eff06b15d06322ed5bc0a8281 = L.marker(
+                [45.2645986, -93.7139383],
+                {
+}
+            ).addTo(map_7a6968ce5c176375db854b32d5733571);
+        
+    
+            var icon_cde37f2bad149ddc21ce81f2038ba124 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d7fe6b9ce32de5cbc9ba19bb13c7923d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f456a93d7b8a7a4f0b9bf1e9f4b75a7a = $(`<div id="html_f456a93d7b8a7a4f0b9bf1e9f4b75a7a" style="width: 100.0%; height: 100.0%;">     <b>Scenario 14</b><br>     Lane Confidence Score: 99.3<br>     Lane Width Score: 88.1<br>     Lane Lookahead Score: 85.151<br>     Lane Visibility Score: 79.594<br>     Safety Score: 93.732<br>     Remarks: <br>     <a href='scenario_videos/scenario_14.mp4' target='_blank'>Watch Video</a>     </div>`)[0];
+                popup_d7fe6b9ce32de5cbc9ba19bb13c7923d.setContent(html_f456a93d7b8a7a4f0b9bf1e9f4b75a7a);
+            
+        
+
+        marker_341f077eff06b15d06322ed5bc0a8281.bindPopup(popup_d7fe6b9ce32de5cbc9ba19bb13c7923d)
+        ;
+
+        
+    
+    
+                marker_341f077eff06b15d06322ed5bc0a8281.setIcon(icon_cde37f2bad149ddc21ce81f2038ba124);
+            
+    
+            var poly_line_2c235b19b0a8e15d81df8fc7fb39ada8 = L.polyline(
+                [[45.2654371, -93.7154781], [45.2661514, -93.7167909]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_7a6968ce5c176375db854b32d5733571);
+        
+    
+            var marker_636f0c3812a1dedf6d2420a3aeb5d6a1 = L.marker(
+                [45.26579425, -93.71613450000001],
+                {
+}
+            ).addTo(map_7a6968ce5c176375db854b32d5733571);
+        
+    
+            var icon_c351663259e3c1fe9567ee039183d4ba = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_639a55294042bde26b8aeb1c1db30888 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_94a6c42e9406e417442b26308c2c8fbd = $(`<div id="html_94a6c42e9406e417442b26308c2c8fbd" style="width: 100.0%; height: 100.0%;">     <b>Scenario 11</b><br>     Lane Confidence Score: 98.2<br>     Lane Width Score: 96.2<br>     Lane Lookahead Score: 90.699<br>     Lane Visibility Score: 87.295<br>     Safety Score: 97.184<br>     Remarks: <br>     <a href='scenario_videos/scenario_11.mp4' target='_blank'>Watch Video</a>     </div>`)[0];
+                popup_639a55294042bde26b8aeb1c1db30888.setContent(html_94a6c42e9406e417442b26308c2c8fbd);
+            
+        
+
+        marker_636f0c3812a1dedf6d2420a3aeb5d6a1.bindPopup(popup_639a55294042bde26b8aeb1c1db30888)
+        ;
+
+        
+    
+    
+                marker_636f0c3812a1dedf6d2420a3aeb5d6a1.setIcon(icon_c351663259e3c1fe9567ee039183d4ba);
+            
+    
+            var poly_line_a8ba1c4f44492a6ba8916c72586a39ed = L.polyline(
+                [[45.2659521, -93.7170113], [45.2652331, -93.7156915]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_7a6968ce5c176375db854b32d5733571);
+        
+    
+            var marker_c526598c05262ccd3ef16d97fbc11e73 = L.marker(
+                [45.265592600000005, -93.71635140000001],
+                {
+}
+            ).addTo(map_7a6968ce5c176375db854b32d5733571);
+        
+    
+            var icon_990eb1635e3455d4c07cf7df24a4d9f4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6ec5f56d81d7b36cffa732c821b26685 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9c6c483cbd9e0e3f4cc3e39e94dab0f1 = $(`<div id="html_9c6c483cbd9e0e3f4cc3e39e94dab0f1" style="width: 100.0%; height: 100.0%;">     <b>Scenario 12</b><br>     Lane Confidence Score: 99.9<br>     Lane Width Score: 99.4<br>     Lane Lookahead Score: 93.216<br>     Lane Visibility Score: 89.695<br>     Safety Score: 99.661<br>     Remarks: <br>     <a href='scenario_videos/scenario_12.mp4' target='_blank'>Watch Video</a>     </div>`)[0];
+                popup_6ec5f56d81d7b36cffa732c821b26685.setContent(html_9c6c483cbd9e0e3f4cc3e39e94dab0f1);
+            
+        
+
+        marker_c526598c05262ccd3ef16d97fbc11e73.bindPopup(popup_6ec5f56d81d7b36cffa732c821b26685)
+        ;
+
+        
+    
+    
+                marker_c526598c05262ccd3ef16d97fbc11e73.setIcon(icon_990eb1635e3455d4c07cf7df24a4d9f4);
+            
+    
+            var poly_line_6b84f2706b4a1b806752650691d2a2ea = L.polyline(
+                [[45.2647553, -93.7148134], [45.2641578, -93.7137132]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_7a6968ce5c176375db854b32d5733571);
+        
+    
+            var marker_a15106afba80d0ce3ead92b930182ae9 = L.marker(
+                [45.26445655, -93.7142633],
+                {
+}
+            ).addTo(map_7a6968ce5c176375db854b32d5733571);
+        
+    
+            var icon_883e39d6d11bb651f141ddafcef70109 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_50408b74278a83fec000e53007e61d64 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_47dd5cb41681a6d59277afbea8f8a70b = $(`<div id="html_47dd5cb41681a6d59277afbea8f8a70b" style="width: 100.0%; height: 100.0%;">     <b>Scenario 13</b><br>     Lane Confidence Score: 99.5<br>     Lane Width Score: 85.8<br>     Lane Lookahead Score: 84.633<br>     Lane Visibility Score: 71.902<br>     Safety Score: 92.665<br>     Remarks: <br>     <a href='scenario_videos/scenario_13.mp4' target='_blank'>Watch Video</a>     </div>`)[0];
+                popup_50408b74278a83fec000e53007e61d64.setContent(html_47dd5cb41681a6d59277afbea8f8a70b);
+            
+        
+
+        marker_a15106afba80d0ce3ead92b930182ae9.bindPopup(popup_50408b74278a83fec000e53007e61d64)
+        ;
+
+        
+    
+    
+                marker_a15106afba80d0ce3ead92b930182ae9.setIcon(icon_883e39d6d11bb651f141ddafcef70109);
+            
+    
+            var poly_line_057f15a1bf7caace2a6c64933158f521 = L.polyline(
+                [[45.2638009, -93.7130528], [45.2630832, -93.7117359]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_7a6968ce5c176375db854b32d5733571);
+        
+    
+            var marker_0cb381acc7d83351c9492833a52bed29 = L.marker(
+                [45.263442049999995, -93.71239435],
+                {
+}
+            ).addTo(map_7a6968ce5c176375db854b32d5733571);
+        
+    
+            var icon_c81c1730a6bafb6dbbae87d747905f2e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d517c82beb41dd1b61c96caa7b53c0ed = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_863cbf9a65233abe4351d9f7308c9b59 = $(`<div id="html_863cbf9a65233abe4351d9f7308c9b59" style="width: 100.0%; height: 100.0%;">     <b>Scenario 7</b><br>     Lane Confidence Score: 99.2<br>     Lane Width Score: 83.2<br>     Lane Lookahead Score: 82.54<br>     Lane Visibility Score: 69.436<br>     Safety Score: 91.202<br>     Remarks: <br>     <a href='scenario_videos/scenario_7.mp4' target='_blank'>Watch Video</a>     </div>`)[0];
+                popup_d517c82beb41dd1b61c96caa7b53c0ed.setContent(html_863cbf9a65233abe4351d9f7308c9b59);
+            
+        
+
+        marker_0cb381acc7d83351c9492833a52bed29.bindPopup(popup_d517c82beb41dd1b61c96caa7b53c0ed)
+        ;
+
+        
+    
+    
+                marker_0cb381acc7d83351c9492833a52bed29.setIcon(icon_c81c1730a6bafb6dbbae87d747905f2e);
+            
+    
+            var poly_line_cf58abd280a64417465dfd30a14b2b79 = L.polyline(
+                [[45.2627222, -93.711076], [45.2621259, -93.7099654]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_7a6968ce5c176375db854b32d5733571);
+        
+    
+            var marker_f2290f990e85bf08313a828f43d125d9 = L.marker(
+                [45.26242405, -93.7105207],
+                {
+}
+            ).addTo(map_7a6968ce5c176375db854b32d5733571);
+        
+    
+            var icon_376012d3ab98db05da134a8cbaae0243 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_628c30f7698da315d072b8ab1937fc87 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_91eb84817a202a42a819dbdc6ba58e40 = $(`<div id="html_91eb84817a202a42a819dbdc6ba58e40" style="width: 100.0%; height: 100.0%;">     <b>Scenario 8</b><br>     Lane Confidence Score: 99.5<br>     Lane Width Score: 98.1<br>     Lane Lookahead Score: 90.868<br>     Lane Visibility Score: 87.263<br>     Safety Score: 98.787<br>     Remarks: <br>     <a href='scenario_videos/scenario_8.mp4' target='_blank'>Watch Video</a>     </div>`)[0];
+                popup_628c30f7698da315d072b8ab1937fc87.setContent(html_91eb84817a202a42a819dbdc6ba58e40);
+            
+        
+
+        marker_f2290f990e85bf08313a828f43d125d9.bindPopup(popup_628c30f7698da315d072b8ab1937fc87)
+        ;
+
+        
+    
+    
+                marker_f2290f990e85bf08313a828f43d125d9.setIcon(icon_376012d3ab98db05da134a8cbaae0243);
+            
+    
+            var poly_line_562a6ac8fda96edad9c32934fbd7efa3 = L.polyline(
+                [[45.2617661, -93.7093043], [45.2611648, -93.7082023]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_7a6968ce5c176375db854b32d5733571);
+        
+    
+            var marker_56ffe88c3241bd88b659e622a00f8a5a = L.marker(
+                [45.26146545, -93.7087533],
+                {
+}
+            ).addTo(map_7a6968ce5c176375db854b32d5733571);
+        
+    
+            var icon_2f8fe5f3bfa797343304d155bb0fb40f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_42751e1212995ee5455e11b46c4a0e00 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cc5294704885b454c07a6a8a8ccab909 = $(`<div id="html_cc5294704885b454c07a6a8a8ccab909" style="width: 100.0%; height: 100.0%;">     <b>Scenario 1</b><br>     Lane Confidence Score: 99.8<br>     Lane Width Score: 97.3<br>     Lane Lookahead Score: 92.217<br>     Lane Visibility Score: 89.934<br>     Safety Score: 98.588<br>     Remarks: <br>     <a href='scenario_videos/scenario_1.mp4' target='_blank'>Watch Video</a>     </div>`)[0];
+                popup_42751e1212995ee5455e11b46c4a0e00.setContent(html_cc5294704885b454c07a6a8a8ccab909);
+            
+        
+
+        marker_56ffe88c3241bd88b659e622a00f8a5a.bindPopup(popup_42751e1212995ee5455e11b46c4a0e00)
+        ;
+
+        
+    
+    
+                marker_56ffe88c3241bd88b659e622a00f8a5a.setIcon(icon_2f8fe5f3bfa797343304d155bb0fb40f);
+            
+    
+            var poly_line_be1ea32c6f039bf1a39e67901045dc7d = L.polyline(
+                [[45.2608079, -93.7075415], [45.2600848, -93.7062253]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_7a6968ce5c176375db854b32d5733571);
+        
+    
+            var marker_5c2a4f3399e9aabfd82a597df5b1b708 = L.marker(
+                [45.26044635, -93.70688340000001],
+                {
+}
+            ).addTo(map_7a6968ce5c176375db854b32d5733571);
+        
+    
+            var icon_e1c80cca56e59ef098c8fa18adcd92cc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6d49de410b69254da3115dd49876961a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_651eb002f8b1d06b02e1a02a25f06c6a = $(`<div id="html_651eb002f8b1d06b02e1a02a25f06c6a" style="width: 100.0%; height: 100.0%;">     <b>Scenario 3</b><br>     Lane Confidence Score: 98.4<br>     Lane Width Score: 62.1<br>     Lane Lookahead Score: 84.458<br>     Lane Visibility Score: 55.704<br>     Safety Score: 80.254<br>     Remarks: <br>     <a href='scenario_videos/scenario_3.mp4' target='_blank'>Watch Video</a>     </div>`)[0];
+                popup_6d49de410b69254da3115dd49876961a.setContent(html_651eb002f8b1d06b02e1a02a25f06c6a);
+            
+        
+
+        marker_5c2a4f3399e9aabfd82a597df5b1b708.bindPopup(popup_6d49de410b69254da3115dd49876961a)
+        ;
+
+        
+    
+    
+                marker_5c2a4f3399e9aabfd82a597df5b1b708.setIcon(icon_e1c80cca56e59ef098c8fa18adcd92cc);
+            
+    
+            var poly_line_d7d396a5df1a832cc8fe8b242efbd29e = L.polyline(
+                [[45.2592503, -93.7046847], [45.2585361, -93.7033627]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_7a6968ce5c176375db854b32d5733571);
+        
+    
+            var marker_bf6e10962a250d8aefcbdb4908335643 = L.marker(
+                [45.2588932, -93.7040237],
+                {
+}
+            ).addTo(map_7a6968ce5c176375db854b32d5733571);
+        
+    
+            var icon_5c10bcd2e5f7f0588fb788f862288d3a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c1cddacbed475b1ddbc87509162ab78f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_21f0dbdb25d4a91af3fc13fd9d608517 = $(`<div id="html_21f0dbdb25d4a91af3fc13fd9d608517" style="width: 100.0%; height: 100.0%;">     <b>Scenario 15</b><br>     Lane Confidence Score: 95.2<br>     Lane Width Score: 50.4<br>     Lane Lookahead Score: 90.394<br>     Lane Visibility Score: 42.744<br>     Safety Score: 72.799<br>     Remarks: <br>     <a href='scenario_videos/scenario_15.mp4' target='_blank'>Watch Video</a>     </div>`)[0];
+                popup_c1cddacbed475b1ddbc87509162ab78f.setContent(html_21f0dbdb25d4a91af3fc13fd9d608517);
+            
+        
+
+        marker_bf6e10962a250d8aefcbdb4908335643.bindPopup(popup_c1cddacbed475b1ddbc87509162ab78f)
+        ;
+
+        
+    
+    
+                marker_bf6e10962a250d8aefcbdb4908335643.setIcon(icon_5c10bcd2e5f7f0588fb788f862288d3a);
+            
+</script>
+</html>
